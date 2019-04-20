@@ -35,7 +35,7 @@
         }
         .litery{
             position: relative;
-            background-color: pink;
+            background-color:pink;
             width: 30px;
             height: 30px;
             text-align: center;
@@ -87,7 +87,7 @@
     <div class="litery", id="szesc">i</div>
     <div class="litery", id="siedem">c</div>
     <div class="litery", id="osiem">e</div>
-        <div id="przycisk">
+        <div id="przycisk" onclick="odjazd()">
         START
         </div>
         </div>
@@ -103,7 +103,15 @@
             var szesc = document.getElementById("szesc");
             var siedem = document.getElementById("siedem");
             var osiem = document.getElementById("osiem");
-          
+
+
+            function odjazd (){
+            dwa.style.transitionDuration = "2s";
+            dwa.style.transform = "translateY(40px)";
+            }
+
+            
+
           </script>
 </body>
 </html>
