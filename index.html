@@ -85,7 +85,7 @@
     <div class="litery", id="cztery">e</div>
     <div class="litery", id="piec">r</div>
     <div class="litery", id="szesc">i</div>
-    <div class="litery", id="siedem">c</div>
+    <div class="litery", id="siedem">s</div>
     <div class="litery", id="osiem">e</div>
         <div id="przycisk" onclick="odjazd()">
         START
@@ -108,6 +108,30 @@
             function odjazd (){
             dwa.style.transitionDuration = "2s";
             dwa.style.transform = "translateY(40px)";
+            cztery.style.transitionDuration = "2s";
+            cztery.style.transform = "translateY(-40px)";
+            piec.style.transitionDuration = "2s";
+            piec.style.transform = "translateY(-40px)";
+            setTimeout(podjazd, 2000);
+            
+            }
+            function podjazd (){
+            jeden.style.transitionDuration = "2s";
+            jeden.style.transform = "translateX(-30px)";
+            cztery.style.transitionDuration = "2s";
+            cztery.style.transform = "translateX(-90px)";
+            trzy.style.transitionDuration = "2s";
+            trzy.style.transform = "translateX(-30px)";
+            szesc.style.transitionDuration = "2s";
+            szesc.style.transform = "translateX(-60px)";
+            siedem.style.transitionDuration = "2s";
+            siedem.style.transform = "translateX(-30px)";
+            osiem.style.transitionDuration = "2s";
+            osiem.style.transform = "translateX(-30px)";
+            piec.style.transitionDuration = "2s";
+            piec.style.transform = "translateX(90px)";
+            dwa.style.transitionDuration = "2s";
+            dwa.style.transform = "translateX(210px)";
             }
 
             
