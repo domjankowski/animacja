@@ -6,7 +6,7 @@
 </head>
         <style type="text/css"> 
         body{
-        background-color: grey;
+        background-color: white;
         }
         #glowny{
             position: absolute;
@@ -14,64 +14,84 @@
             top: 50%;
             margin-left: -150px;
             margin-top: -25px;
-            background-color: blue;
             width: 300px;
-            height: 35px;
+            height: 30px;
+            /*
             border: solid;
+            background-color: blue;
             border-color: black;
+            */
         }
         #przycisk{
             position: absolute;
             top: 150px;
-            left: 100px;
-            background-color: blue;
-            width: 100px;
+            left: 140px;
+            width: 20px;
             height: 20px;
+            text-align: center;
+            
+            
             border: solid;
             border-color: black;
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            background-color: red;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
         }
         .litery{
             position: relative;
-            background-color:pink;
             width: 30px;
             height: 30px;
             text-align: center;
-            padding-top: 5px;
         }
         #jeden{
             position: absolute;
             left: 30px;
+            background-image: url("img/1.png");
+            background-size: 30px, 30px;
         }
         #dwa{
             position: absolute;
             left: 60px;
+            background-image: url("img/2.png");
+            background-size: 30px, 30px;
         }
         #trzy{
             position: absolute;
             left: 90px;
+            background-image: url("img/3.png");
+            background-size: 30px, 30px;
         }
         #cztery{
             position: absolute;
             left: 120px;
+            background-image: url("img/4.png");
+            background-size: 30px, 30px;
         }
         #piec{
             position: absolute;
             left: 150px;
+            background-image: url("img/5.png");
+            background-size: 30px, 30px;
         }
         #szesc{
             position: absolute;
             left: 180px;
+            background-image: url("img/6.png");
+            background-size: 30px, 30px;
         }
         #siedem{
             position: absolute;
             left: 210px;
+            background-image: url("img/1.png");
+            background-size: 30px, 30px;
         }
         #osiem{
             position: absolute;
             left: 240px;
+            background-image: url("img/4.png");
+            background-size: 30px, 30px;
         }
         </style>
         
@@ -79,16 +99,15 @@
 <body>
 
         <div id="glowny">
-    <div class="litery", id="jeden">S</div>
-    <div class="litery", id="dwa">y</div>
-    <div class="litery", id="trzy">n</div>
-    <div class="litery", id="cztery">e</div>
-    <div class="litery", id="piec">r</div>
-    <div class="litery", id="szesc">i</div>
-    <div class="litery", id="siedem">s</div>
-    <div class="litery", id="osiem">e</div>
-        <div id="przycisk" onclick="odjazd()">
-        START
+    <div class="litery", id="jeden"></div>
+    <div class="litery", id="dwa"></div>
+    <div class="litery", id="trzy"></div>
+    <div class="litery", id="cztery"></div>
+    <div class="litery", id="piec"></div>
+    <div class="litery", id="szesc"></div>
+    <div class="litery", id="siedem"></div>
+    <div class="litery", id="osiem"></div>
+        <div id="przycisk" onmouseover="odjazd()">
         </div>
         </div>
 
